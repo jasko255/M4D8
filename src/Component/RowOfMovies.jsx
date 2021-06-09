@@ -21,6 +21,17 @@ class RowOfMovies extends React.Component {
     );
   };
   render() {
+
+
+
+
+//     {img: "https://m.media-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_SX300.jpg",
+//      title: "Rogue One: A Star Wars Story", id: "tt3748528"}
+// id: "tt3748528"
+// img: "https://m.media-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_SX300.jpg"
+// title: "Rogue One: A Star Wars Story"
+
+
     return (
         <>
        <h2>{this.props.title}</h2>

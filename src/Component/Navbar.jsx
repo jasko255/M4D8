@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NetflixLogo from "../assets/netflix_logo.png";
 import Avatar from "../assets/avatar.png"
@@ -13,7 +13,7 @@ class CustomNavbar extends Component {
       <Navbar collapseOnSelect expand="lg">
         {/* <Container > */}
         <Navbar.Brand>
-          <img src={NetflixLogo} id="logo" />
+          <img src={NetflixLogo} id="logo" alt='bla'/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -28,7 +28,7 @@ class CustomNavbar extends Component {
           <AiOutlineSearch/>
           <Nav.Link className='nav-link-c'>KIDS</Nav.Link>
           <IoIosNotifications/>
-          <NavDropdown title={<img src={Avatar} id='avatar'/>} id="collasible-nav-dropdown">
+          <NavDropdown title={<img src={Avatar} id='avatar' alt='fgh'/>} id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
