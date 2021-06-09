@@ -4,7 +4,7 @@ import CustomNavbar from './Component/Navbar';
 import Header from './Component/Header';
 import RowOfMovies from './Component/RowOfMovies';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import ShowDetail from './Component/ShowDetail'
+// import ShowDetail from './Component/ShowDetail'
 
 
 // Create a Route for a ShowDetail component. It should be able to receive a ID parameter from the querystring.
@@ -19,8 +19,9 @@ function App() {
     <Router>
     <CustomNavbar/>
     <Header/>
-    <RowOfMovies title='Star Wars'/>
-    <Route path="/details/:movId/" component={ShowDetail} />
+    <Route exact path="/" render={(routerProps) => <RowOfMovies {...routerProps} title="Star Wars" />} />
+    
+    {/* <Route path="/details/:movId/" component={ShowDetail} /> */}
     {/* <RowOfMovies title='Harry Potter'/> */}
     {/* <RowOfMovies title='The lord of the rings'/> */}
     </Router>
